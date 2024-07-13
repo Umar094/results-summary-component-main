@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p{
+    font-size: 1.08rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: white;
+}
+
+
+
+.container{
+    display: flex;
+    min-height: 60%;
+    max-width: 700px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 28px hsl(0, 0%, 0%, 0.1);
+}
+
+.first-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 50%;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+
+.result-text{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.title-discription{
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+
+.circle{
+    position: relative;
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    padding:1rem;
+}
+
+
+
+.circle-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.result-of-test{
+    font-weight: 800;
+    font-size: 3.6rem
+}
+
+.circle p{
+    color: white
+}
+
+.higherThen-text{
+    color: hsl(241, 100%, 89%);
+}
+
+.second-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px;
+    width: 50%;
+    color: black;
+}
+
+
+.second-box button{
+    height: 50px;
+    border-radius: 25px;
+    border-style: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    cursor: pointer;
+}
+
+.second-box button:hover{
+    background-color: hsl(241, 81%, 54%);
+}
+
+.boxes-wrapper{
+    display: block;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px;
+    height: min-content;
+    margin-bottom: 12px;
+    border-radius: 9px;
+}
+
+.summary-text{
+    color: hsl(224, 30%, 27%);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.colorFor-100{
+    color: hsl(0, 0%, 60%);
+}
+
+.black-color{
+    color: hsl(224, 30%, 27%);
+}
+
+
+.box1{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.box2{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.box3{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.box4{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.ability-text-color1{
+    color: hsl(0, 100%, 67%);
+}
+
+.ability-text-color2{
+    color: hsl(39, 100%, 56%);
+}
+
+.ability-text-color3{
+    color: hsl(166, 100%, 37%);
+}
+
+.ability-text-color4{
+    color: hsl(234, 85%, 45%);
+}
+
+
+.icon-text{
+    display: flex;
+    gap: 5px;
+}
+
+@media all and (max-width:500px){
+    .container{
+        flex-direction: column;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+    
+    .first-box{
+        border-radius: 0 0 25px 25px;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .second-box{
+        width: 100%;
+        display: flex;
+    }
+
+    .circle{
+        width: 130px;
+        height: 130px;
+
+    }
+}
+
